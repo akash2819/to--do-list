@@ -56,7 +56,7 @@ function App(props) {
   const headingText=`${taskList.length} ${taskNoun} remaining`;
  //To delete task
  function deleteTask(id) {
-   const remainingTasks=tasks.filter(task=> id!=task.id);
+   const remainingTasks=tasks.filter(task=> id!==task.id);
    setTasks(remainingTasks);
   //  console.log(id);
  }
